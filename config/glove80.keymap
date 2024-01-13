@@ -123,7 +123,7 @@
         magic_layer {
             bindings = <
 &none        &none            &none            &none            &none                                                                                                     &none  &none  &none  &none  &none
-&none        &to 0            &to 4            &to 5            &none            &none                                                                             &none  &none  &none  &none  &none  &none
+&none        &to 4            &to 5            &none            &none            &none                                                                             &none  &none  &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                                   &none  &none  &none  &none  &none  &bootloader
 &sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &bt BT_CLR  &bt BT_CLR_ALL  &none  &none  &none  &none  &none  &none  &sys_reset
@@ -155,23 +155,23 @@
 
         game {
             bindings = <
-&magic 1 0  &trans  &trans  &trans  &trans                                                                                 &trans     &trans     &trans    &trans    &magic 1 0
-&kp ESC     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                                                 &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &trans
-&kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T                                                                  &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp LCTRL   &kp A   &kp S   &kp D   &kp F   &kp G                                                                  &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
-&kp LSHFT   &kp Z   &kp X   &kp C   &kp V   &kp B   &trans     &trans    &trans      &trans  &trans     &trans     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&trans      &kp N6  &kp N7  &kp N8  &kp N9          &kp SPACE  &kp LALT  &kp LWIN    &trans  &kp LCTRL  &kp ENTER          &kp MINUS  &kp EQUAL  &kp BSLH  &trans    &trans
+&none      &none   &trans  &trans  &trans                                                                                 &trans     &trans     &trans    &trans    &to 0
+&kp ESC    &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                                                 &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &trans
+&kp TAB    &kp Q   &kp W   &kp E   &kp R   &kp T                                                                  &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp LCTRL  &kp A   &kp S   &kp D   &kp F   &kp G                                                                  &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp APOS
+&kp LSHFT  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans     &trans    &trans      &trans  &trans     &trans     &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&none      &kp N6  &kp N7  &kp N8  &kp N9          &kp SPACE  &kp LALT  &kp LWIN    &trans  &kp LCTRL  &kp ENTER          &kp MINUS  &kp EQUAL  &kp BSLH  &trans    &trans
             >;
         };
 
         game_shifted {
             bindings = <
-&magic 1 0  &trans      &trans  &trans  &trans                                                                               &trans  &trans  &trans  &trans  &magic 1 0
-&kp ESC     &kp N5      &kp N1  &kp N2  &kp N3  &kp N4                                                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp T       &kp TAB     &kp Q   &kp W   &kp E   &kp R                                                                &trans  &trans  &trans  &trans  &trans  &trans
-&kp G       &kp LCTRL   &kp A   &kp S   &kp D   &kp F                                                                &trans  &trans  &trans  &trans  &trans  &trans
-&kp B       &kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &trans     &trans    &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp N6      &kp N7  &kp N8  &kp N9          &kp SPACE  &kp LALT  &kp LEFT_WIN    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&none    &none       &trans  &trans  &trans                                                                               &trans  &trans  &trans  &trans  &to 0
+&kp ESC  &kp N5      &kp N1  &kp N2  &kp N3  &kp N4                                                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp T    &kp TAB     &kp Q   &kp W   &kp E   &kp R                                                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp G    &kp LCTRL   &kp A   &kp S   &kp D   &kp F                                                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp B    &kp LSHIFT  &kp Z   &kp X   &kp C   &kp V   &trans     &trans    &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&none    &kp N6      &kp N7  &kp N8  &kp N9          &kp SPACE  &kp LALT  &kp LEFT_WIN    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
